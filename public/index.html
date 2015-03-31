@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Comics!</title>
+	<!-- Style -->
+		<link rel="stylesheet" href="css/init_login.css">
+		<link rel="stylesheet" href="css/init_home.css">
+	<!-- End style -->
+
+	<!-- Script -->
+	    <script src="js/vendor/prefixfree.min.js"></script>
+		<script src="js/vendor/jquery-1.11.1.min.js"></script>
+    <!-- End Script -->
+</head>
+<body>
+	
+<section id="init">
+	
+</section>
+
+
+<!-- Template Login-->
+<script type="text/template" id="template_login">
+	<section id="pushbox">
+		<h1><strong>Push</strong>Box</h1>
+	</section>
+
+	<section>
+		<button class="show-card">
+         	Press here
+  	    </button>
+	    <article class="card">
+	     <section class="close">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 32 32">
+        <path d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z" fill="#aaa"></path>
+      </svg>
+    </section>
+		    <section class="details">
+		      <h2 class="name">Login</h2>
+		      <p class="description">
+		      	<input type="text" class="input-login" placeholder="USER">
+		      	<input type="text" class="input-login" placeholder="PASSWORD">
+		      </p>
+
+		      <p class="description">
+		      	<button class="btn-login" id="btn-click">Log in</button>
+		      	<button class="btn-login" id="register">Register</button>
+		      </p>
+		    </section>
+		    <section class="headshot">
+		      <div id="monster" onclick="game.tap.call();">
+				    <div id="body">
+				      <div id="eye">
+				        <div id="iris"></div>
+				      </div>
+				      <div id="eye">
+				        <div id="iris"></div>
+				      </div>
+
+				      <div id="tooth">
+				        <div class="teeth"></div>
+				        <div class="teeth"></div>
+				        <div class="teeth"></div>
+				      </div>
+				      <div id="mouth"></div>
+				    </div>
+			   </div>
+		    </section>
+	    </article>
+	</section>
+	<script src="js/init_login.js"></script>
+</script>
+<!-- End Template Login-->
+
+<!-- Template Register-->
+<script type="text/template" id="template_register">
+
+	<section>
+	    <article class="card show" style="display: block;">
+		    <section class="details">
+		      <h2 class="name">Registration</h2>
+		      <p class="description">
+
+				  <input class="input-login null-margin" type="text" name="fullname_input" id="fullname" placeholder="Full Name" required/>
+
+				  <input class="input-login null-margin" type="text" name="email_input" id="email" 
+				  placeholder="Email" required/>
+
+				  <input class="input-login null-margin" type="text" name="username_input" id="username" placeholder="Username" required/>
+
+				  <input class="input-login null-margin" type="password" name="pass_input" id="pass" placeholder="Password" required/>
+		      </p>
+
+		      <p class="description">
+		      	<button  id="Register" class="btn-login">Register</button>
+			    <button  id="Cancel" class="btn-login">Cancel</button>
+		        <div class="error-field"></div>
+		      </p>
+
+		    </section>
+		    <section class="headshot">
+		      <div id="monster" style="cursor:none;" onclick="game.tap.call();">
+				    <div id="body">
+				      <div id="eye">
+				        <div id="iris"></div>
+				      </div>
+				      <div id="eye">
+				        <div id="iris"></div>
+				      </div>
+
+				      <div id="tooth">
+				        <div class="teeth"></div>
+				        <div class="teeth"></div>
+				        <div class="teeth"></div>
+				      </div>
+				      <div id="mouth"></div>
+				    </div>
+			   </div>
+		    </section>
+	    </article>
+	</section>
+	<script src="js/init_login.js"></script>
+</script>
+<!-- End Register -->
+
+<!-- Home -->
+<script type="text/template" id="template_home">
+	
+<div id="container">
+    <div class="page-wrap">
+        <div class="slide-menu left-side">
+            <div class="menuTop">
+                 <h2>PushBox</h2>
+            </div>
+            <ul>
+                <li>
+                	<a href="#">Push!</a>
+                </li>
+                <li>
+                	<a href="#">Profile</a>
+                </li>
+                <li class="active">
+                	<a href="#">Setting</a>
+                </li>
+                <li>
+                	<a href="#">Delivery</a>
+                </li>
+                <li>
+                	<a href="#logout">Logout</a>
+                </li>
+            </ul>
+        </div>
+        <div for="toggle" class="handle">
+	        <span class="left"></span>
+	 		<span class="logo"></span>
+        </div>
+        <div class="content">
+             <article>
+                  <div class="wrapper" style="margin-top: 8em;">
+                  <div class="flue"></div>
+                  <div class="Box"></div>
+                    <div class="car">
+
+                      <div class="car-body">
+                        <div class="part-one">
+                          <div class="drivmirror"></div>
+                          <div class="cat">
+                            <span class="eyes left"></span>
+                            <span class="eyes right"></span>
+                            <span class="mouth"></span>
+                          </div>
+                          <div class="helm"></div>
+                        </div>
+
+                        <div class="mirrors">
+                          <div class="mirror left"></div>
+                          <div class="mirror right"></div>
+                        </div>
+
+                        <div class="part-two">
+                          <div class="lights">
+                            <div class="light left"></div>
+                            <div class="light right"></div>
+                          </div>
+
+                          <div class="lights second">
+                            <div class="light left"></div>
+                            <div class="light right"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="wheels">
+                        <div class="wheel left"></div>
+                        <div class="wheel right"></div>
+                      </div>
+
+                    </div>
+
+                    <div class="sign">
+                      <div class="message">
+                      	<a href="#">
+                      		<span class="span">Push!</span>
+                      	</a>
+                      </div>
+                      <div class="base"></div>
+                    </div>
+                  </div>
+                </article>
+        </div>
+    </div>
+    <!-- .page-wrap -->
+</div>
+    
+ 
+	<script src="js/init_home.js"></script>
+</script>
+<!-- End Home -->
+
+<!-- Libraries -->
+	<script src="js/vendor/underscore-min.js"></script>
+	<script src="js/vendor/backbone1-min.js"></script>
+<!-- End Libraries -->
+
+<!-- References -->
+	<script src="js/references.js"></script>
+<!-- End References -->
+
+<!-- models -->
+	<script src="js/models/session.js"></script>
+<!-- End Models -->
+
+<!-- views -->
+	<script src="js/views/login.js"></script>
+	<script src="js/views/home.js"></script>
+<!-- End views -->
+
+<!-- routers -->
+	<script src="js/routers/routers.js"></script>
+<!-- End Routers -->
+</body>
+</html>

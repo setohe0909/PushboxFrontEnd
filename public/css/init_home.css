@@ -1,0 +1,522 @@
+div, ul , li{
+    display: block; 
+    top: 0; bottom: 0; left: 0; right:0;
+}
+
+.left{ 
+  position: absolute;right: auto; left: 0;}
+.right{ 
+  position: absolute;left: auto; right: 0;}
+
+.span
+{ 
+  position: absolute;
+  letter-spacing: 3px;
+  font: 3vw/1 Anchor, Impact, sans-serif; 
+  text-align: center; 
+}
+
+.wrapper{
+  position: absolute;
+  margin: auto; 
+  height: 350px;
+  width: 420px;
+  border-bottom: 8px solid #fff;
+  overflow: hidden;
+}
+
+.car{
+  position: absolute;
+  margin: auto; 
+  height: 60%;
+  width: 60%;
+  overflow: hidden;
+  top: auto; right: auto; left: 10%;
+  z-index: 1;
+}
+
+.car .car-body{
+  position: absolute;
+  margin: auto; 
+  height: 85%;
+  width: 100%;
+  bottom: auto;
+  z-index: 2;
+  animation:car 0.75s infinite;
+  -webkit-animation:car 0.75s infinite;
+}
+
+.car .wheels{
+  position: absolute;
+  margin: auto; 
+  height: 15%;
+  width: 80%;
+  top: auto;
+  z-index: 1;
+}
+
+.car .wheels .wheel{
+  position: absolute;
+  margin: auto; 
+  height: 100%;
+  width: 20%;
+  background: #333;
+  top: auto;
+  border-radius: 0 0 30% 30%;
+}
+
+.car .mirrors{
+  position: absolute;
+  margin: auto; 
+  height: 15%;
+  width: 100%;
+  bottom: auto; top: 40%;
+}
+
+.car .mirrors .mirror{
+  position: absolute;
+  margin: auto; 
+  height: 100%;
+  width: 10%;
+  background: #333;
+  top: auto;
+  border-radius: 30%;
+}
+
+.car .car-body .part-one{
+  position: absolute;
+  margin: auto; 
+  height: 50%;
+  width: 72%;
+  bottom: auto;
+  border: 10px solid #C44032;
+  overflow: hidden;
+}
+
+.car .car-body .part-two{
+  position: absolute;
+  margin: auto; 
+  height: 50%;
+  width: 100%;
+  top: auto;
+  background: #C44032;
+  border-radius: 40px 40px 20px 20px;
+}
+
+.car-body .part-one .drivmirror{
+  position: absolute;
+  margin: auto; 
+  height: 20%;
+  width: 25%;
+  bottom: auto;
+  top: 1px;
+  background: #DDD;
+  border-radius: 25% ;
+}
+
+.car-body .part-one .helm{
+  position: absolute;
+  margin: auto; 
+  height:40px;
+  width: 40px;
+  top: auto;
+  bottom: -35px;
+  border: 8px solid #333;
+  border-radius: 50% ;
+  left: auto; right: 18%;
+}
+
+.cat {
+  position: absolute;
+  margin: auto; 
+  background:#D0A36C;
+  height: 60%;
+  top: auto;
+  bottom: 0;
+  width: 35%;
+  z-index: 0;
+  left: auto; right: 15%;
+}
+
+
+.cat:after{
+  position: absolute;
+    margin: auto; 
+    border-right: 0px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid #73635D;
+    right: 0;
+}
+
+.cat .eyes{
+  margin: auto; 
+  position: absolute;
+  height: 8px; width: 8px;
+  background: #FFF;
+  border-radius: 100%;
+  top: 15px;
+}
+
+.cat .eyes.left{ 
+  position: absolute;left: 12px; }
+.cat .eyes.right{  
+  position: absolute;right: 12px; }
+
+.cat .mouth{
+  margin: auto; 
+  position: absolute;
+  height: 4px; width: 60%;
+  background: #eee;
+  border-radius: 0 0 30% 30%;
+  top: 28px;
+  margin: auto;
+  left: 0; right: 0;
+}
+
+.car:hover .cat .mouth{
+  position: absolute;
+  margin: auto; 
+  height: 6px; width: 6px;
+  border-radius: 50%;
+  top: 26px;
+}
+
+.car-body .part-two .lights{
+  position: absolute;
+  margin: auto; 
+  height: 30%;
+  width: 80%;
+}
+
+.part-two .lights .light{
+  position: absolute;
+  margin: auto; 
+  height: 100%;
+  width: 15%;
+  background: #fefcea; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #fefcea 0%, #f1da36 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#fefcea), color-stop(100%,#f1da36)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #fefcea 0%,#f1da36 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #fefcea 0%,#f1da36 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #fefcea 0%,#f1da36 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center, #fefcea 0%,#f1da36 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  border-radius: 50%;
+}
+
+.part-two .lights.second{
+  position: absolute;
+  margin: auto; 
+  height: 8px;
+  width: 80%;
+  top: auto;
+  bottom: 10%;
+}
+
+.part-two .lights.second .light{
+  position: absolute;
+  margin: auto; 
+  width: 20px;
+  border-radius: 25%;
+}
+
+.sign{
+  position: absolute;
+  margin: auto; 
+  height: 80%;
+  width: 30%;
+  left: auto;
+  top: auto;
+  z-index: 2;
+}
+.Box{
+  border-radius: 10px;
+  background: #EDD98D;
+  width: 16em;
+  height: 17em;
+  position: absolute;
+  margin: auto 0;
+  top: 0px;
+  left: 2.5em;
+}
+.sign .message{
+  position: absolute;
+  margin: auto; 
+  background: #fff;
+  border-radius: 50%;
+  height: 120px;
+  border: 7px solid #C44032;
+  position: relative;
+  top: -60px;
+  bottom: auto;
+  z-index: 2;
+  -webkit-animation: pulse 1s ease-in-out infinite;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.8);
+     }
+
+  50% {
+    -webkit-transform: scale(1);
+     }
+
+  100% {
+    -webkit-transform: scale(0.8);
+    } 
+  }
+
+.flue{
+  position: absolute;
+  margin: auto 0;
+  top: -280px;
+  left: 16.5em;
+  background: #333;
+  width: 20px;
+  height: 10px;
+}
+
+.sign .message span:before {
+  width: 1.5em;
+  height: 1.5em;
+  background: rgba(128, 128, 128, 0.5);
+  border: 1px solid gray;
+  top: 0;
+  left: 0;
+  -webkit-animation: circle-before 1s ease-in-out infinite;
+  -moz-animation: circle-before 1s ease-in-out infinite;
+  animation: circle-before 1s ease-in-out infinite;
+}
+
+
+.sign .message span{
+  position: absolute;
+  margin: auto; 
+  display: block;
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+  left: 20px;
+  top: 45px;
+  color: #333;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.sign .base{
+  position: absolute;
+  margin: auto; 
+    background: #AAA;
+  height: 80%;
+  width: 10px;
+  top: auto;
+}
+
+@keyframes car {
+0 {top:0;}
+25% {top:2px;}
+50% {top:0;}
+75% {top:5px;}  
+100% {top: 0;}
+}
+
+@-webkit-keyframes car /*Safari and Chrome*/ {
+0 {top:0;}
+25% {top:2px;}
+50% {top:0;}
+75% {top:5px;}  
+100% {top: 0;}
+}
+
+/* menu */
+
+/* Hidden Scrollbars */
+ #container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+    overflow: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+/* Reset for the page-wrapper */
+ .page-wrap {
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    /* Transforms Reset */
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    /* */
+    background: #f6f3fe;
+    position: relative;
+}
+/* If Slide page-wrap offsets left or right */
+ .page-wrap.slide-left {
+    -webkit-transform: translate3d(220px, 0, 0);
+    -moz-transform: translate3d(220px, 0, 0);
+    -ms-transform: translate3d(220px, 0, 0);
+    -o-transform: translate3d(220px, 0, 0);
+    transform: translate3d(220px, 0, 0);
+}
+.page-wrap.slide-right {
+    -webkit-transform: translate3d(-220px, 0, 0);
+    -moz-transform: translate3d(-220px, 0, 0);
+    -ms-transform: translate3d(-220px, 0, 0);
+    -o-transform: translate3d(-220px, 0, 0);
+    transform: translate3d(-220px, 0, 0);
+}
+/* Menu Branding */
+ .slide-menu {
+    background: #333333;
+    width: 220px !important;
+    height: 50em;
+    position: absolute;
+}
+.slide-menu.left-side {
+    left:-220px;
+   /* box-shadow: -10px 0px 40px rgba(0, 0, 0, 0.55) inset;*/
+    text-align: left;
+}
+/* fix crazy focus on right menu elements in android 
+Due to the translate3d some focus of the right menu a and Span tags were showing offset on android.
+*/
+ /*.slide-menu a, .slide-menu span {
+  -webkit-transform: translate3d(0,0,0);
+}*/
+
+.slide-menu .menuTop {
+    overflow:hidden;
+}
+.slide-menu .menuTop h2 {
+    color:#fff;
+    margin:.35em 0;
+}
+.slide-menu.left-side .menuTop h2 {
+    font: 3vw/1 Anchor, Impact, sans-serif;
+    float:left;
+    padding:0 0 0 .3em;
+}
+
+.slide-menu .menuTop span {
+    width:50px;
+    height:50px;
+    background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAA3NCSVQICAjb4U/gAAAAMFBMVEX///////////////////////////////////////////////////////////////9Or7hAAAAAEHRSTlMAESIzRFVmd4iZqrvM3e7/dpUBFQAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDgvMTkvMTPtSK/GAAAA30lEQVQokW2RP04CQRjFH4isGwNyAAo6WmsKtbOwgBMYjmCMB/AIewFCwQGwsJZ4AmzpSAiVhSTQrG78+THLRsLHK2bme/PmzfdHOor2G3w+/scdAkZFfMYOz3lcmsLs6XYAWSMQTXjd7nfwHogpy1x6T5Y7/F7mxMlXcLlmUbhfsbZ1TE/qS1XplG+pzI8Up9IwkSa0FLGxgCTGyC4POudDVUiH0FeNF9VJtgqDKWLmujCVHQx2EbEy4kZBYgJVjhMHT5yp+9Yl5lJ3xfnyXYNcC32T3RjcoPwo/bD38QfwPsaxTt8olQAAAABJRU5ErkJggg==');
+    background-repeat:no-repeat;
+    display:block;
+    background-position:50%;
+}
+.slide-menu.left-side .menuTop span {
+    float:right;
+    margin:0 0 0 5px;
+}
+
+.slide-menu .menuTop span:hover {
+    cursor:pointer;
+}
+.slide-menu ul {
+    width:220px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display:block;
+}
+.slide-menu ul li {
+    position:relative;
+}
+/* classical pseudo element border trick for the active li */
+ .slide-menu.left-side ul li.active a:after {
+    border-bottom: 13px solid transparent;
+    border-top: 13px solid transparent;
+    border-right: 13px solid #f6f3fe;
+    right: 0px;
+    content:'';
+    top: 6px;
+    position: absolute;
+}
+
+.slide-menu ul li a {
+    font: 2vw/1 Anchor, Impact, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fefefe;
+    display: block;
+    padding: .5em 1em .5em .5em;
+    margin-bottom: 1px;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, .02) 0%, rgba(0, 0, 0, .1) 100%);
+    background: -moz-linear-gradient(rgba(255, 255, 255, .02) 0%, rgba(0, 0, 0, .1) 100%);
+    background: -o-linear-gradient(rgba(255, 255, 255, .02) 0%, rgba(0, 0, 0, .1) 100%);
+    background: linear-gradient(rgba(255, 255, 255, .02) 0%, rgba(0, 0, 0, .1) 100%);
+    color: #fff;
+    text-shadow: 0 1px 0 #000;
+}
+.slide-menu ul li a:hover {
+    background-color:#C44032;
+}
+/* Brand for the Top Bar(handle) and Left n right Burger Menu Icons(span) */
+ .handle {
+    width: 100%;
+    display: block;
+    position: relative;
+    height: 50px;
+    /*background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(50%, #eeeeee), color-stop(100%, #dddddd));*/
+    background: #C44032;
+    background-color:#C44032;
+    color: rgba(255, 255, 255, 0.25);
+    overflow:hidden;
+    padding:0;
+    text-align:center;
+}
+.handle .logo {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAeBAMAAAAodabAAAAAA3NCSVQICAjb4U/gAAAAMFBMVEX///////////////////////////////////////////////////////////////9Or7hAAAAAEHRSTlMAESIzRFVmd4iZqrvM3e7/dpUBFQAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDgvMDEvMTMVnK6ZAAAB30lEQVQ4je3TO08CQRAH8OEpIj4KeyhJLOATyKkUdFjaSaxszFHYcwUF0ZijMsZC/QZiY2FzxFiagK2Fj8bEQjGKciLHOjtzsBAT6Y2XkB3+7G8vu7MA/LHHvwjgW+qX+MwuYKnJIp1e4EmelbUBMt0BiH5RmfikIdvC9EUWQogLiuaFyA8QEQOdie4wcVwSv93bEvJ13kZx432Q5OGYyeFtjIhIMgFLA72O43gLvE8DxKl6HCY3hRyRmqFIRK4eRWcuK2K/Bm0i3na2TOSsrkjIxnHVwNRQ5LwVviIStKfrRE6bivjlTybuPVHpk2zlMmoIWYWbE2+UnDwq4utIgmfAy7mkYCaJTL2EWpwcKALCHTlxScKhHFIVf5uT1eURJGIzKRjQ5WSqPIKMvTE51sBKUjJ+P4J460wapZKVpyTwMYJAjnIf3ihxxMl1n3i6/P7hEwNeauwznc7ecWJGf+tLgUhStgWAGoMkpfdIUN5u3RjqvklEk20BoMYgmbR6JPyBY6KK83KKGO7+UpgH2kxCokdS9zhGmuB5nvlJsC28WSQ+IrO1zUxDLh5wtDkbfhJL3u6axgdS6/0rH3iSEGVFMjgJ1mMAO/iBffwWx4UzcqF4qVTkSf7tXfh/AL4Bs5LusorADV4AAAAASUVORK5CYII=');
+    height:50px;
+    width:100px;
+    background-repeat:no-repeat;
+    background-position:50%;
+    margin:0 auto;
+    display:inline-block;
+    padding:0;
+    position:static;
+}
+.handle span {
+    width:50px;
+    height:50px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAAA3NCSVQICAjb4U/gAAAABlBMVEX///////9VfPVsAAAAAnRSTlMA/1uRIrUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAAAFnRFWHRDcmVhdGlvbiBUaW1lADA4LzE5LzEz7UivxgAAAB1JREFUCJljYMAC2P//f8DA////ByQCLEZfxSAAADGLLEQncL+9AAAAAElFTkSuQmCC');
+    background-repeat:no-repeat;
+    background-position:50%;
+    display:block;
+    position:absolute;
+    top:0;
+}
+.handle span.left {
+    left:0;
+}
+
+
+.page-wrap.slide-left .handle span.left{
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+.handle span.left:hover, .menuTop span:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+/*specific for the tapping on android mobile devices*/
+ .handle span.left, .menuTop span {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.25);
+}
+.content {
+    padding: 0 1em;
+    /* for some strange reason the content layer sometimes it does not render until first tap on android ICS, the next line fixes this*/
+    position:relative;
+}
+
